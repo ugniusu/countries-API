@@ -21,13 +21,13 @@ code {
   letter-spacing: 1px;
   color: #fff;
   min-height: 100%;
-  background: linear-gradient(0deg, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0.1)),
+  background: linear-gradient(0deg, rgba(24, 31, 28, 1), rgba(24, 31, 28, 0.1)),
     url("https://images.unsplash.com/photo-1540402871140-1e9e22e05299?q=80&w=1078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
 }
 
 .home {
-  background-color: #222;
+  background-color: #181f1c;
 }
 
 .region-container {
@@ -78,15 +78,24 @@ code {
   position: relative;
   width: 15rem;
   height: 25rem;
-  background-color: #cecece;
+  background-color: #687051;
+  color: #f9f9f9;
   margin: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.card:hover,
+.card:active {
+  transform: translateY(-5px);
 }
 
 .flag {
   width: 100%;
-  /* margin-left: 1rem; */
-  /* margin-top: 1rem; */
+  height: 10rem;
+  object-fit: fill;
+  border-radius: 8px 8px 0 0;
 }
 
 .card-button {
@@ -97,15 +106,22 @@ code {
   width: 100%;
   height: 2rem;
   border: 0;
-  border-top: 1px solid #222;
+  border-top: 1px solid #f9f9f9;
+  color: #f9f9f9;
   background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.card-button:hover,
 .card-button:active {
   box-shadow: inset 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.coat-of-arms {
+  width: 40px;
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
 }
 
 .search-container {
@@ -181,7 +197,7 @@ code {
   display: flex;
   justify-content: space-between;
   height: 15rem;
-  background-color: #222;
+  background-color: #181f1c;
   border-top: 2px solid #fff;
   color: #fff;
 }

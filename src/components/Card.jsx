@@ -28,6 +28,11 @@ function Card({ region }) {
             <strong>Region: </strong>
             {item.region}
           </p>
+          <img
+            className="coat-of-arms"
+            src={item.coatOfArms.png}
+            alt={item.name.common}
+          />
           <button className="card-button" onClick={() => openModal(item)}>
             More
           </button>
